@@ -200,9 +200,9 @@ async def start(client, message):
         config_dict["DM_MODE"]
         and message.chat.type != message.chat.type.SUPERGROUP
     ):
-        start_string = "Bot Started.\n" \
-                       "Now I will send all of your stuffs here.\n" \
-                       "Use me at: @Z_Mirror"
+        start_string = "🌻Bot Started💥.\n" \
+                       "✨Now I will send♻ all of your stuffs here🤞.\n" \
+                       "Use me at: @MirrorLeecher"
     elif (
         not config_dict["DM_MODE"]
         and message.chat.type != message.chat.type.SUPERGROUP
@@ -211,7 +211,7 @@ async def start(client, message):
             message
         )
     ):
-        start_string = "Sorry, you cannot use me in private!"
+        start_string = "😕Sorry, you cannot use me in private!Please use  me in @MirrorLeecher"
     elif (
         not config_dict["DM_MODE"]
         and message.chat.type != message.chat.type.SUPERGROUP
@@ -223,7 +223,7 @@ async def start(client, message):
         start_string = "There's nothing to Start here.\n" \
                        "Try something else or read HELP"
     else:
-        start_string = "Start me in DM, not in the group.\n" \
+        start_string = "❗Start me in DM, not in the group🤞.\n" \
                        f"cc: {tag}"
     await send_message(
         message,
